@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    int n;
+    int newNum;
+
+    while (1) {
+        printf("Enter any number: ");
+        if (scanf("%d", &num) != 1) {
+            break;
+        }
+
+        printf("Enter nth bit to set (0-31): ");
+        if (scanf("%d", &n) != 1) {
+            break;
+        }
+
+        newNum = num | (1 << n);
+
+        printf("Bit set successfully.\n\n");
+        printf("Number before setting %d bit: %d (in decimal)\n", n, num);
+        printf("Number after setting %d bit: %d (in decimal)\n\n", n, newNum);
+    }
+
+    return 0;
+}
