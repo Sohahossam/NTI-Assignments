@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+    162	      0	      0	    162	     a2	D:\NTI\NTI-Embedded\Week 3\Day 9\Code\Project1\release\Team 1.elf
