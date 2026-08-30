@@ -1,0 +1,18 @@
+#ifndef _HAL_BUTTON_BUTTON_INTERFACE_H
+#define _HAL_BUTTON_BUTTON_INTERFACE_H
+
+#include <stdint.h>
+#include "../../Mcal/DIO/DIO_Interface.h"
+
+typedef enum
+{
+    Btn_InternalPullup,
+    Btn_ExternalPullup,
+    Btn_ExternalPulldown,
+
+}Btn_ConnectionType_t;
+
+void Btn_Init (uint8_t ButtonGroup,uint8_t ButtonPin,uint8_t Connection);
+uint8_t Btn_ReadState(uint8_t ButtonGroup,uint8_t ButtonPin,uint8_t Connection);
+
+#endif
